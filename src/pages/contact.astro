@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout_page.astro";
+---
+
+<Layout>
+    <body id="body">
+        <section id="portfolio_page">
+            <div class="email_page_group">
+                <h2 class="page_section_text">Contact me!</h2>
+                <div class="email_page_subgroup">
+                    <h1 class="email_text">f.r.moira@gmail.com</h1>
+                    <button class="copy_button" onclick="copyText()"
+                        ><img
+                            class="copy_icon"
+                            src="/public/01C_02copy_icon.png"
+                        /></button
+                    >
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function copyText() {
+                /* Copy text into clipboard */
+                navigator.clipboard.writeText("f.r.moira@gmail.com");
+            }
+        </script>
+    </body>
+</Layout>

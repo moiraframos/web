@@ -1,0 +1,877 @@
+@font-face {
+    font-family: "moirahw";
+    src: url("/Moirahw02.otf");
+}
+
+@font-face {
+    font-family: "moirahwBOLD";
+    src: url("/Moirahw02bold.otf");
+}
+
+@font-face {
+    font-family: "Century Gothic";
+    src: url("/GOTHIC.TTF");
+}
+
+* {
+    font-family: "moirahw", "Century Gothic", sans-serif;
+    margin: 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+:root {
+    --text-color: black;
+}
+
+::selection {
+    color: rgb(252, 255, 255);
+    background: rgb(99, 220, 208);
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN PAGE */
+
+
+.MAINPAGE {
+    flex: 1;
+    position: relative;
+    min-height: 400px;
+    margin-top: 1%;
+}
+
+.Asize {
+    width: 70%;
+    pointer-events: painted;
+}
+
+
+
+
+.firma_GROUP {
+    position: relative;
+}
+
+.firma {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: -1;
+}
+
+.meanim_GROUP {
+    position: relative;
+}
+
+.meanim {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    margin: auto;
+    animation: alternar 2s infinite;
+}
+
+
+
+/*animación me y sparkles*/
+
+.meanim:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.meanim:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.meanim:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.meanim:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+
+
+@keyframes alternar {
+
+    0%,
+    24.99% {
+        opacity: 1;
+    }
+
+    25%,
+    100% {
+        opacity: 0;
+    }
+}
+
+/*fin animacion*/
+
+
+.props_GROUP {
+    position: relative;
+}
+
+.prop {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: auto;
+}
+
+
+.otherartists_GROUP {
+    position: relative;
+}
+
+.people_icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: auto;
+}
+
+.social_icons_GROUP {
+    position: relative;
+
+}
+
+.social_icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: auto;
+}
+
+
+.BG_GROUP {
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: auto;
+    z-index: -2;
+}
+
+
+
+/*HOVERS*/
+
+#link_cv:hover~.meanim {
+    filter: hue-rotate(20deg);
+    filter: brightness(120%);
+}
+
+.prop01_1 {
+    z-index: -1;
+}
+
+#link_prop01:hover~.prop01 {
+    opacity: 0;
+}
+
+#link_prop02:hover~.prop02 {
+    filter: hue-rotate(20deg);
+    filter: brightness(140%);
+}
+
+#link_prop03:hover~.prop03 {
+    filter: hue-rotate(20deg);
+    filter: brightness(120%);
+}
+
+#link_prop04:hover~.prop04 {
+    filter: hue-rotate(20deg);
+    filter: brightness(120%);
+}
+
+#link_prop05:hover~.prop05 {
+    filter: hue-rotate(20deg);
+    filter: brightness(150%);
+}
+
+#link_prop06:hover~.prop06 {
+    filter: hue-rotate(20deg);
+    filter: brightness(130%);
+}
+
+#link_people:hover~.people_icon {
+    filter: hue-rotate(20deg);
+    filter: brightness(110%);
+}
+
+#link_email:hover~.email {
+    filter: hue-rotate(20deg);
+    filter: brightness(150%);
+}
+
+#link_insta:hover~.insta {
+    filter: hue-rotate(20deg);
+    filter: brightness(150%);
+}
+
+#link_in:hover~.in {
+    filter: hue-rotate(20deg);
+    filter: brightness(150%);
+}
+
+#link_git:hover~.git {
+    filter: hue-rotate(20deg);
+    filter: brightness(120%);
+}
+
+
+/*LINKS*/
+
+.hover {
+    z-index: 1;
+    display: inline-block;
+    line-height: 0;
+    position: absolute;
+
+}
+
+
+#link_cv {
+    width: 20vw;
+    height: 20vw;
+    margin-top: 6vw;
+    left: 35%;
+}
+
+#link_prop01 {
+    width: 4vw;
+    height: 5.5vw;
+    margin-top: 37vw;
+    left: 36%;
+}
+
+#link_prop02 {
+    width: 4.2vw;
+    height: 10vw;
+    margin-top: 32.4vw;
+    left: 40%;
+
+}
+
+#link_prop03 {
+    width: 6vw;
+    height: 3.3vw;
+    margin-top: 39vw;
+    left: 44%;
+}
+
+#link_prop04 {
+    width: 4.2vw;
+    height: 14vw;
+    margin-top: 28.4vw;
+    left: 50%;
+}
+
+#link_prop05 {
+    width: 7.4vw;
+    height: 6.5vw;
+    margin-top: 36vw;
+    left: 53%;
+}
+
+#link_prop06 {
+    width: 5.3vw;
+    height: 4.2vw;
+    margin-top: 38.5vw;
+    left: 60.8%;
+
+}
+
+
+#link_people {
+    width: 6.6vw;
+    height: 6.6vw;
+    margin-top: 6vw;
+    left: 73.5%;
+}
+
+#link_email {
+    width: 5vw;
+    height: 3.3vw;
+    margin-top: 20vw;
+    left: 62%;
+}
+
+#link_insta {
+    width: 3vw;
+    height: 3vw;
+    margin-top: 25vw;
+    left: 66%;
+}
+
+#link_in {
+    width: 3vw;
+    height: 3vw;
+    margin-top: 29.5vw;
+    left: 68.5%;
+}
+
+#link_git {
+    width: 3vw;
+    height: 3vw;
+    margin-top: 34vw;
+    left: 70.8%;
+}
+
+
+/*PROPS TITLES*/
+
+.prop_text {
+    color: black;
+    opacity: 0;
+    font-size: 1.5vw;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+}
+
+
+
+#title_prop01 {
+    margin-top: 44vw;
+    left: 36.3%;
+}
+
+#title_prop02 {
+    margin-top: 44vw;
+    left: 40.8%;
+}
+
+#title_prop03 {
+    margin-top: 44vw;
+    left: 45%;
+}
+
+#title_prop04 {
+    margin-top: 44vw;
+    left: 49.5%;
+}
+
+#title_prop05 {
+    margin-top: 44vw;
+    left: 55.5%;
+}
+
+#title_prop06 {
+    margin-top: 44vw;
+    left: 62.3%;
+}
+
+
+/*TITLE HOVERS*/
+
+#link_prop01:hover~#title_prop01 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#link_prop02:hover~#title_prop02 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#link_prop03:hover~#title_prop03 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#link_prop04:hover~#title_prop04 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#link_prop05:hover~#title_prop05 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#link_prop06:hover~#title_prop06 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* NAVBAR */
+
+.NAVBAR {
+    width: 12vw !important;
+    height: auto;
+    margin: 10vh 4vw 10vh 4vw;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+
+}
+
+.nav_me {
+    width: 10vw;
+}
+
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5vh;
+}
+
+.nav_text {
+    height: 2.5vw;
+    margin-top: auto;
+}
+
+.nav_subtext {
+    text-align: right;
+    margin-right: 70px;
+    margin-top: 10px;
+    color: black;
+    font-size: 90%;
+}
+
+
+
+/*NAV HOVERS*/
+.nav_text:hover {
+    color: #ff5d5d;
+}
+
+.nav_subtext:hover {
+    color: #ff5d5d;
+
+}
+
+.hover_keep {
+    color: #ff5d5d;
+}
+
+
+
+
+
+/* NAVBAR SOCIAL ICONS*/
+
+.nav_social_MAIN {
+    display: grid;
+    margin-top: 5vh;
+}
+
+.nav_email_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.nav_redes_group {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: auto;
+}
+
+
+.nav_icon_email {
+    width: 3.3vw;
+    margin-right: 7px;
+}
+
+.nav_icon {
+    width: 2vw;
+}
+
+
+
+
+
+
+
+
+/*PAGES STRUCTURE*/
+
+.page_section_title {
+    color: black;
+    font-size: 2vw;
+    text-align: center;
+    margin: 10vh auto 5vh auto;
+    padding-left: 20vw;
+}
+
+.page_section_text {
+    color: black;
+    font-size: 1.5vw;
+    text-align: center;
+    justify-content: center;
+    margin: 10vh auto 10vh auto;
+    padding-left: 20vw;
+}
+
+.coming_soon {
+    margin-top: 25vh;
+    margin-bottom: 30vh;
+}
+
+
+
+/*PORTFOLIO LAYOUT MENUS*/
+
+.pf_img {
+    width: 61vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-left: 30vw;
+    margin-bottom: 2vh;
+}
+
+.portfolio_page_titleicon {
+    max-width: 61vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 100px auto;
+    /* padding-left: 20vw; */
+    margin-left: 30vw;
+
+}
+
+.portfolio_page_titleicon_item {
+    margin: 0.2vw;
+    width: 30vw;
+    padding: 10px;
+
+
+}
+
+.portfolio_page_titleicon_item.active {
+    background: #d8e3c5;
+    border-radius: 5px;
+}
+
+.visdevmenufixed {
+    position: fixed;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0;
+
+}
+
+
+.pf_img_titleicon {
+    width: 20vw;
+}
+
+.pf_text_titleticon {
+    text-align: center;
+    font-size: 1.5vw;
+    white-space: nowrap;
+}
+
+/*
+.gray {
+    filter: saturate(20%);
+    width: 10vw;
+    color: #6b6b6b;
+    font-size: 1vw;
+}
+
++/
+
+
+
+
+
+
+
+
+
+/* 3D */
+
+.page_3d_title {
+    font-size: 1.2vw !important;
+
+}
+
+.blendervideo {
+    margin: 10px;
+    border: #538378;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.model_group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-left: 20vw;
+}
+
+
+.sargo {
+    margin-top: 40px;
+    width: 40vw;
+}
+
+.jelly {
+    margin-top: 40px;
+    width: 22.5vw;
+
+}
+
+.birds {
+    width: 31.2vw;
+}
+
+.duck_title_group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+}
+
+
+
+
+
+
+/* REEL */
+.reel {
+    width: 61vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-left: 30vw;
+}
+
+
+
+
+
+
+/* PORTFOLIO */
+
+.portfolio {
+    width: 61vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    max-width: 800px;
+    margin: auto;
+    padding-left: 20vw
+}
+
+.bio_text {
+    color: black;
+    font-size: 18px;
+    text-align: justify;
+    justify-content: center;
+    margin: 10vh 15vw 3vh 15vw;
+    padding-left: 20vw;
+}
+
+
+
+
+
+
+/* OTHER ARTISTS  */
+
+.people {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    max-width: 800px;
+    margin: auto;
+    padding-left: 20vw
+}
+
+.artist_icon {
+    width: 7vw;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.artist_name {
+    font-size: 1.2vw;
+    color: var(--text-color);
+    text-align: center;
+    margin: auto;
+    margin-top: 2vh;
+}
+
+.artist_type {
+    font-size: 1vw;
+    color: #4d8e35;
+    text-align: center;
+    margin-top: 1vh;
+
+}
+
+.artist_group_hover {
+    padding: 3vw;
+}
+
+.artist_group_hover:hover {
+    background-color: #f5f6e8;
+}
+
+
+
+
+
+
+
+/* CONTACT ME */
+
+
+.email_page_group {
+    padding-left: 20vw;
+    padding-top: 20vh;
+    max-width: 800px;
+
+}
+
+.email_page_subgroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-left: 20vw;
+    margin-top: -6vh;
+}
+
+.email_text {
+    font-size: 30px;
+    margin: 15px 0 0 45px;
+    color: var(--text-color);
+    font-weight: lighter;
+}
+
+.copy_button {
+    border: none;
+    background-color: transparent;
+}
+
+.copy_icon {
+    width: 25px;
+    margin: 20px 0 0 10px;
+}
+
+.copy_icon:hover {
+    filter: brightness(150%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    color: #ff5d5d;
+    font-size: 13px;
+    text-align: center;
+    padding: 350px 0 100px 0;
+    margin: auto;
+}
+
+.footer_page {
+    margin-left: 20vw;
+    margin-top: -20vw;
+}
+
+
+#profile-link {
+    color: rgb(194, 40, 58);
+    font-size: 13px;
+}
+
+/*añadir que si el footer esta en una pag de pf le añada margin-left= 20vw; extras*/

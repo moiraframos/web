@@ -1,0 +1,27 @@
+---
+const { currentPath = "/" } = Astro.props;
+---
+
+<div class="portfolio_page_titleicon visdevmenufixed">
+    <div
+        class={`portfolio_page_titleicon_item${currentPath === "/chardesign" ? " active" : ""}`}
+    >
+        <a id="link_chardesign" class="Asize" href="/chardesign">
+            <h1 class="pf_text_titleticon">Character design</h1>
+        </a>
+    </div>
+    <div
+        class={`portfolio_page_titleicon_item${currentPath === "/visdev" ? " active" : ""}`}
+    >
+        <a id="link_visdev" class="Asize" href="/visdev">
+            <h1 class="pf_text_titleticon">Concept art</h1>
+        </a>
+    </div>
+    <div
+        class={`portfolio_page_titleicon_item${currentPath === "/props" ? " active" : ""}`}
+    >
+        <a id="link_props" class="Asize" href="/props">
+            <h1 class="pf_text_titleticon">Props</h1>
+        </a>
+    </div>
+</div>

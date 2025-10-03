@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout_page.astro";
+import VisdevMenu from "../components/VisdevMenu.astro";
+
+const currentPath = Astro.url.pathname;
+---
+
+<Layout>
+    <body id="body">
+        <section class="portfolio_page">
+            <VisdevMenu currentPath={currentPath} />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <img class="pf_img" src="/public/09C_01_VISDEV.png" />
+            <img class="pf_img" src="/public/09C_02_VISDEV.png" />
+            <img class="pf_img" src="/public/09C_03_VISDEV.png" />
+            <img class="pf_img" src="/public/09C_04_VISDEV.png" />
+            <img class="pf_img" src="/public/09C_05_VISDEV.png" />
+            <img class="pf_img" src="/public/09C_06_VISDEV.png" />
+            <img class="pf_img" src="/public/09C_07_VISDEV.png" />
+            <img class="pf_img" src="/public/09C_08_VISDEV.png" />
+            <img class="pf_img" src="/public/09C_09_VISDEV.png" />
+        </section>
+    </body>
+</Layout>
