@@ -1,27 +1,46 @@
 ---
-const { currentPath = "/" } = Astro.props;
+
 ---
 
 <div class="portfolio_page_titleicon visdevmenufixed">
-    <div
-        class={`portfolio_page_titleicon_item${currentPath === "/chardesign" ? " active" : ""}`}
-    >
+    <div class="portfolio_page_titleicon_item" data-path="/chardesign">
         <a id="link_chardesign" class="Asize" href="/chardesign">
             <h1 class="pf_text_titleticon">Character design</h1>
         </a>
     </div>
-    <div
-        class={`portfolio_page_titleicon_item${currentPath === "/visdev" ? " active" : ""}`}
-    >
+    <div class="portfolio_page_titleicon_item" data-path="/visdev">
         <a id="link_visdev" class="Asize" href="/visdev">
             <h1 class="pf_text_titleticon">Concept art</h1>
         </a>
     </div>
-    <div
-        class={`portfolio_page_titleicon_item${currentPath === "/props" ? " active" : ""}`}
-    >
+    <div class="portfolio_page_titleicon_item" data-path="/props">
         <a id="link_props" class="Asize" href="/props">
             <h1 class="pf_text_titleticon">Props</h1>
         </a>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        function normalize(path) {
+            // Remove trailing slash except for root
+            return path.length > 1 && path.endsWith("/")
+                ? path.slice(0, -1)
+                : path;
+        }
+        const currentPath = normalize(window.location.pathname);
+
+        document
+            .querySelectorAll(".portfolio_page_titleicon_item")
+            .forEach((div) => {
+                const itemPath = normalize(div.dataset.path);
+                // Exact match or highlight for subroutes (e.g., /visdev/xyz)
+                if (
+                    currentPath === itemPath ||
+                    (itemPath !== "/" && currentPath.startsWith(itemPath + "/"))
+                ) {
+                    div.classList.add("active");
+                }
+            });
+    });
+</script>
