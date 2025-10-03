@@ -1,6 +1,7 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Moira Framos",
+  "short_name": "Moira Framos",
+  "start_url": "/",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
