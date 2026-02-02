@@ -7,16 +7,28 @@ import Layout from "../layouts/Layout_page.astro";
         <section id="portfolio_page">
             <div class="email_page_group">
                 <h2 class="page_section_text">Contact me!</h2>
-                <div class="email_page_subgroup">
-                    <h1 class="email_text">f.r.moira@gmail.com</h1>
-                    <button class="copy_button" onclick="copyText()"
-                        ><img
-                            class="copy_icon"
-                            src="/01C_02copy_icon.png"
-                        /></button
-                    >
-                </div>
+
+                <button class="copy_button" ;>
+                    <img class="copy_icon" src="/01C_02copy_icon.png" />
+                </button>
             </div>
+
+            <script>
+                const button = document.querySelector(".copy_button");
+                const emailText = document.getElementById("email");
+
+                button?.addEventListener("click", () => {
+                    const text = emailText?.textContent || "";
+                    navigator.clipboard
+                        .writeText(text)
+                        .then(() => {
+                            alert("Email copiado!"); // O puedes cambiar el texto del botón
+                        })
+                        .catch((err) => {
+                            console.error("Error al copiar:", err);
+                        });
+                });
+            </script>
         </section>
 
         <script>
