@@ -95,12 +95,27 @@ body {
     transform: translate(-50%, 0);
     opacity: 0;
     margin: auto;
-    animation: alternar 2s infinite;
+    animation: alternarmeanim 2s infinite;
 }
 
 
+.sparkanim_GROUP {
+    position: relative;
+}
 
-/*animación me y sparkles*/
+.sparkanim {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    margin: auto;
+    animation: alternarsparks 2s infinite;
+    filter: brightness(130%);
+}
+
+
+/*animación me*/
 
 .meanim:nth-child(1) {
     animation-delay: 0s;
@@ -118,9 +133,7 @@ body {
     animation-delay: 1.5s;
 }
 
-
-
-@keyframes alternar {
+@keyframes alternarmeanim {
 
     0%,
     24.99% {
@@ -132,6 +145,37 @@ body {
         opacity: 0;
     }
 }
+
+/*animacion sparks*/
+
+
+.sparkanim:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.sparkanim:nth-child(2) {
+    animation-delay: 1s;
+}
+
+@keyframes alternarsparks {
+    0% {
+        opacity: 1;
+    }
+
+    49.99% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
 
 /*fin animacion*/
 
@@ -149,30 +193,31 @@ body {
 }
 
 
-.otherartists_GROUP {
-    position: relative;
-}
 
-.people_icon {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin: auto;
-}
 
 .social_icons_GROUP {
-    position: relative;
-
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    /* Espacio entre iconos */
+    /* Añade la posición donde quieres que aparezca el grupo */
+    top: 8vw;
+    left: 30%;
 }
 
 .social_icon {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin: auto;
+    width: 2.5vw;
 }
+
+/* Modifica la clase hover SOLO para los iconos sociales */
+.social_icons_GROUP .hover {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+}
+
+
 
 
 .BG_GROUP {
@@ -197,63 +242,46 @@ body {
     filter: brightness(120%);
 }
 
-.prop01_1 {
-    z-index: -1;
-}
 
 #link_prop01:hover~.prop01 {
-    opacity: 0;
+    filter: hue-rotate(100deg);
+    filter: brightness(160%);
 }
+
 
 #link_prop02:hover~.prop02 {
     filter: hue-rotate(20deg);
     filter: brightness(140%);
 }
 
+
 #link_prop03:hover~.prop03 {
     filter: hue-rotate(20deg);
-    filter: brightness(120%);
+    filter: brightness(140%);
 }
 
 #link_prop04:hover~.prop04 {
     filter: hue-rotate(20deg);
-    filter: brightness(120%);
+    filter: brightness(140%);
 }
 
 #link_prop05:hover~.prop05 {
     filter: hue-rotate(20deg);
-    filter: brightness(150%);
+    filter: brightness(140%);
 }
 
 #link_prop06:hover~.prop06 {
     filter: hue-rotate(20deg);
+    filter: brightness(140%);
+}
+
+
+
+.social_icon:hover {
+    filter: hue-rotate(20deg);
     filter: brightness(130%);
 }
 
-#link_people:hover~.people_icon {
-    filter: hue-rotate(20deg);
-    filter: brightness(110%);
-}
-
-#link_email:hover~.email {
-    filter: hue-rotate(20deg);
-    filter: brightness(150%);
-}
-
-#link_insta:hover~.insta {
-    filter: hue-rotate(20deg);
-    filter: brightness(150%);
-}
-
-#link_in:hover~.in {
-    filter: hue-rotate(20deg);
-    filter: brightness(150%);
-}
-
-#link_git:hover~.git {
-    filter: hue-rotate(20deg);
-    filter: brightness(120%);
-}
 
 
 /*LINKS*/
@@ -272,6 +300,7 @@ body {
     height: 20vw;
     margin-top: 6vw;
     left: 35%;
+
 }
 
 #link_prop01 {
@@ -279,80 +308,58 @@ body {
     height: 5.5vw;
     margin-top: 37vw;
     left: 36%;
+
 }
 
+
 #link_prop02 {
-    width: 4.2vw;
+    width: 4.8vw;
     height: 10vw;
     margin-top: 32.4vw;
     left: 40%;
 
 }
 
+
+
 #link_prop03 {
     width: 6vw;
-    height: 3.3vw;
-    margin-top: 39vw;
+    height: 5vw;
+    margin-top: 37vw;
     left: 44%;
+
 }
+
 
 #link_prop04 {
     width: 4.2vw;
     height: 14vw;
     margin-top: 28.4vw;
     left: 50%;
+
 }
+
 
 #link_prop05 {
     width: 7.4vw;
     height: 6.5vw;
     margin-top: 36vw;
     left: 53%;
+
 }
 
 #link_prop06 {
-    width: 5.3vw;
-    height: 4.2vw;
-    margin-top: 38.5vw;
+    width: 5.8vw;
+    height: 4.7vw;
+    margin-top: 37vw;
     left: 60.8%;
 
 }
 
 
-#link_people {
-    width: 6.6vw;
-    height: 6.6vw;
-    margin-top: 6vw;
-    left: 73.5%;
-}
 
-#link_email {
-    width: 5vw;
-    height: 3.3vw;
-    margin-top: 20vw;
-    left: 62%;
-}
 
-#link_insta {
-    width: 3vw;
-    height: 3vw;
-    margin-top: 25vw;
-    left: 66%;
-}
 
-#link_in {
-    width: 3vw;
-    height: 3vw;
-    margin-top: 29.5vw;
-    left: 68.5%;
-}
-
-#link_git {
-    width: 3vw;
-    height: 3vw;
-    margin-top: 34vw;
-    left: 70.8%;
-}
 
 
 /*PROPS TITLES*/
@@ -822,7 +829,7 @@ body {
 /* FOOTER */
 .footer {
     color: #aaa9a7;
-    font-size: 13px;
+    font-size: 0.9vw;
     text-align: center;
     margin: auto;
     margin-bottom: 4vh;
@@ -836,7 +843,7 @@ body {
 
 #profile-link {
     color: rgb(111, 105, 106);
-    font-size: 13px;
+    font-size: 0.9vw;
 }
 
 /*añadir que si el footer esta en una pag de pf le añada margin-left= 20vw; extras*/
