@@ -65,7 +65,7 @@ body {
 }
 
 .Asize {
-    width: 70%;
+    width: 41%;
     pointer-events: painted;
 }
 
@@ -298,16 +298,18 @@ body {
 #link_cv {
     width: 20vw;
     height: 20vw;
-    margin-top: 6vw;
-    left: 35%;
+    margin-top: 5vw;
+    left: 36%;
+
 
 }
 
 #link_prop01 {
     width: 4vw;
     height: 5.5vw;
-    margin-top: 37vw;
-    left: 36%;
+    margin-top: 34vw;
+    left: 38%;
+
 
 }
 
@@ -315,8 +317,9 @@ body {
 #link_prop02 {
     width: 4.8vw;
     height: 10vw;
-    margin-top: 32.4vw;
-    left: 40%;
+    margin-top: 30vw;
+    left: 41.5%;
+
 
 }
 
@@ -325,8 +328,9 @@ body {
 #link_prop03 {
     width: 6vw;
     height: 5vw;
-    margin-top: 37vw;
-    left: 44%;
+    margin-top: 34.5vw;
+    left: 46%;
+
 
 }
 
@@ -334,25 +338,27 @@ body {
 #link_prop04 {
     width: 4.2vw;
     height: 14vw;
-    margin-top: 28.4vw;
-    left: 50%;
+    margin-top: 26vw;
+    left: 51.5%;
+
 
 }
 
 
 #link_prop05 {
     width: 7.4vw;
-    height: 6.5vw;
-    margin-top: 36vw;
-    left: 53%;
+    height: 5.8vw;
+    margin-top: 34vw;
+    left: 55%;
+
 
 }
 
 #link_prop06 {
     width: 5.8vw;
     height: 4.7vw;
-    margin-top: 37vw;
-    left: 60.8%;
+    margin-top: 35vw;
+    left: 62%;
 
 }
 
@@ -846,4 +852,137 @@ body {
     font-size: 0.9vw;
 }
 
-/*añadir que si el footer esta en una pag de pf le añada margin-left= 20vw; extras*/
+/*añadir que si el footer esta en una pag de pf le añada margin-left= 20vw; extras
+creo que al final cambie el footer a la navbar asique ya no hace falta(?)*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOR PHONE */
+
+@media (max-width: 768px) {
+
+    .MAINPAGE {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200vw;
+    }
+
+
+    /*LINKS*/
+
+
+    #link_cv {
+        width: 40vw;
+        height: 40vw;
+        margin-top: 10vw;
+        left: 36%;
+    }
+
+    #link_prop01 {
+        width: 8vw;
+        height: 11vw;
+        margin-top: 68vw;
+        left: 38%;
+
+    }
+
+
+    #link_prop02 {
+        width: 9.6vw;
+        height: 20vw;
+        margin-top: 59vw;
+        left: 41.5%;
+
+    }
+
+
+
+    #link_prop03 {
+        width: 12vw;
+        height: 10vw;
+        margin-top: 69vw;
+        left: 46%;
+
+    }
+
+
+    #link_prop04 {
+        width: 8.4vw;
+        height: 28vw;
+        margin-top: 51vw;
+        left: 51.5%;
+
+    }
+
+
+    #link_prop05 {
+        width: 14.8vw;
+        height: 11.6vw;
+        margin-top: 67.5vw;
+        left: 55%;
+
+    }
+
+    #link_prop06 {
+        width: 11.6vw;
+        height: 9.4vw;
+        margin-top: 69.5vw;
+        left: 62%;
+
+    }
+
+
+
+
+    .social_icons_GROUP {
+        margin-top: 2vh;
+    }
+
+    .social_icon {
+        width: 7vw;
+
+    }
+
+
+
+
+
+
+    /*TEXTOS*/
+
+    .bio_text {
+        font-size: 3vw;
+        /* esto hace mas peque el texto de CV */
+
+    }
+
+    .page_section_title {
+        font-size: 4vw;
+    }
+
+}
